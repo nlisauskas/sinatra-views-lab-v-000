@@ -7,7 +7,7 @@
   <body>
     <h1>Today</h1>
     <% require 'date'
-      day = DateTime.now(%A)
+      day = DateTime.now('%A')
       month = DateTime.now(%B)
       now = DateTime.now %>
     <p><%= "The date is #{day}, #{month} #{now.day}, #{now.year}."  %></p>
