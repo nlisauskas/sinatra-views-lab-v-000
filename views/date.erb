@@ -7,9 +7,9 @@
   <body>
     <h1>Today</h1>
     <% require 'date'
-      day = DateTime.now('%A')
-      month = DateTime.now('%B')
-      now = DateTime.now %>
-    <p><%= "The date is #{day}, #{month} #{now.day}, #{now.year}."  %></p>
+      t = DateTime.now
+      day = t.strftime("%A")
+      month = t.strftime("%B") %>
+    <p><%= "The date is #{day}, #{month} #{t.day}, #{t.year}."  %></p>
   </body>
 </html>
